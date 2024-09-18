@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {User} from './Shared/Model/user';
+
+
 
 @Component({
   selector: 'app-root',
@@ -9,6 +12,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Angular-Hm-Project';
-  name:string = 'My Name'
+  title = 'User Generation';
+
 }
