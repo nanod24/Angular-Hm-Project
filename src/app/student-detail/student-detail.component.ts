@@ -11,5 +11,5 @@ import {NgIf} from "@angular/common";
 })
 export class StudentDetailComponent {
 
-@Input() student?: User;
+  @Input() student?: User;
 }
