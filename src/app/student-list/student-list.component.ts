@@ -3,7 +3,7 @@ import { User} from "../Shared/Model/user";
 import {NgForOf} from "@angular/common";
 import {StudentDetailComponent} from "../student-detail/student-detail.component";
 import {StudentService} from "../services/student.service";
-import {RouterOutlet} from "@angular/router";
+
 
 
 @Component({
@@ -23,7 +23,8 @@ export class StudentListComponent {
   userList: User[] = [];
 
 
-  constructor(private studentService: StudentService ) {
+  constructor (private studentService: StudentService ) {
+    this.userList = this.studentService.getStudents()
 
 
   }
