@@ -1,6 +1,6 @@
 //mockStudent.data.ts
 //import the interface
-import {User} from './Models/user';
+import {User} from './Model/user';
 
 //Create a mock data array of type User and export so it is
 //available to other files
