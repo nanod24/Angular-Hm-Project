@@ -29,6 +29,9 @@ export class StudentListComponent {
 
   }
 
-
+  selectedStudent?: User;
+  selectStudent(student: User): void {
+    this.selectedStudent = student;
+  }
 
 }
