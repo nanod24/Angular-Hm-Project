@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import {User} from "../Shared/Model/user";
+import {userList} from "../Shared/mockStudent.data"
+import {Observable, of} from "rxjs";
+
 
 
 
@@ -7,15 +10,10 @@ import {User} from "../Shared/Model/user";
   providedIn: 'root'
 })
 export class StudentService {
-private student: User[] = [];
+private student: User[] = userList;
   constructor() { }
-  getStudents(){
-    return [ //Copied from app.component.ts
-      {id: 1, firstName: "Matt", lastName: "Haug", department: "Programming", isAdmin: false},
-      {id: 2, firstName: "Darren", lastName: "Takakki", department: "Web Dev", isAdmin: true},
-      {id: 3, firstName: "John", lastName: "Doe", department: "Programming", isAdmin: false},
-      {id: 4, firstName: "Jane", lastName: "Doe", department: "Programming", isAdmin:true}
-    ];
+  getStudents(): Observable<User[]>{
+    return of (userList};
   }
 
 }

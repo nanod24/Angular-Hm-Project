@@ -3,5 +3,5 @@ export interface User {
   firstName: string;
   lastName: string;
   department: string;
-  isAdmin: boolean
+  isAdmin?: boolean
 }
