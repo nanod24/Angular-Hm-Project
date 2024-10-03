@@ -37,6 +37,25 @@ export class StudentDetailComponent {
     });
     });
   }
+//function to go back to student-list view
+  goBack(): void {
+    this.router.navigate(['/students']);
+  }
+
+//function to move foward through array with overflow protection
+  goForward(): void {
+    if (this.currentIndex < this.userList.length - 1) {
+      this.currentIndex++;
+      this.router.navigate(['/students', this.userList[this.currentIndex].id]);
+    }
+  }
+//function to move backward through array with overflow protection
+  goBackward(): void {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.router.navigate(['/students', this.userList[this.currentIndex].id]);
+    }
+  }
 
 
 }
