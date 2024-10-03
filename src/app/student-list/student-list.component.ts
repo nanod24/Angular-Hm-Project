@@ -3,6 +3,7 @@ import { User} from "../Shared/Model/user";
 import {NgForOf} from "@angular/common";
 import {StudentDetailComponent} from "../student-detail/student-detail.component";
 import {StudentService} from "../services/student.service";
+import {RouterLink} from "@angular/router";
 
 
 
@@ -12,7 +13,7 @@ import {StudentService} from "../services/student.service";
   imports: [
     NgForOf,
     NgForOf,
-    StudentDetailComponent,
+    StudentDetailComponent, RouterLink
   ],
   templateUrl: './student-list.component.html',
   styleUrl: './student-list.component.scss'
