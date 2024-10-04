@@ -12,7 +12,7 @@ import {StudentListComponent} from "./student-list/student-list.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title= 'Student Management System';
+  title= 'Updated Student List';
 
 
 
