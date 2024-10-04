@@ -9,7 +9,7 @@ import {ModifyStudentComponent} from "./app/modify-student/modify-student.compon
 import {PageNotFouundComponent} from "./app/page-not-fouund/page-not-fouund.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: '/students', pathMatch: 'full'},
+  //{path: '', redirectTo: '/students', pathMatch: 'full'},
   { path: 'students', component: StudentListComponent },
   { path: 'students/:id', component: StudentDetailComponent },
   { path: 'modify-student', component: ModifyStudentComponent },
